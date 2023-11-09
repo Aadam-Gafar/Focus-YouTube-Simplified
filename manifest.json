@@ -2,5 +2,8 @@
     "name": "My YouTube",
     "version": "0.1",
     "manifest_version": 3,
-    "description": "My version of YouTube."
+    "description": "My version of YouTube.",
+    "action": {
+        "default_popup": "popup.html"
+    }
 }
