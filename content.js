@@ -8,13 +8,22 @@ function removeSidebar() {
   }
 }
 
+function removeRecommendations() {
+  console.log("Calling 'removeRecommendations()'");
+  var element = document.getElementById("secondary");
+  if (element) {
+    element.remove();
+  }
+}
+
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
 
-/* Sidebar is adjusted dynamically after DOM load
+/* Content is adjusted dynamically after DOM load
 Therefore, we wait one second before removing it. */
 delay(1000).then(() => removeSidebar());
+delay(1000).then(() => removeRecommendations());
 
 window.addEventListener("resize", (event) => {
   removeSidebar();
