@@ -13,3 +13,8 @@
 #guide-button {
   display: none; /* Removes burger menu */
 }
+
+video.video-stream.html5-main-video {
+  height: auto;
+  width: -webkit-fill-available;
+}

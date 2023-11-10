@@ -16,6 +16,12 @@ function removeRecommendations() {
   }
 }
 
+function resizePlayer() {
+  console.log("Resizing player");
+  document.querySelector('video.video-stream.html5-main-video').style.width = '-webkit-fill-available';
+  document.querySelector('video.video-stream.html5-main-video').style.height = 'auto';
+}
+
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -24,7 +30,9 @@ function delay(time) {
 Therefore, we wait one second before removing it. */
 delay(1000).then(() => removeSidebar());
 delay(1000).then(() => removeRecommendations());
+delay(1000).then(() => resizePlayer());
 
 window.addEventListener("resize", (event) => {
   removeSidebar();
+  resizePlayer();
 });
