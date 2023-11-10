@@ -4,7 +4,6 @@ const callback = (mutationList, observer) => { // Function to execute when obser
   removeSidebar();
   removeRecommendations();
   resizePlayer();
-  removeFeed();
 };
 
 // Create observer instance and begin observing for mutations
@@ -43,12 +42,5 @@ function resizePlayer() {
   if (videoControls) {
     videoControls.style.width = '-webkit-fill-available';
     videoControls.style.right = '12px';
-  }
-}
-
-function removeFeed() {
-  var element = document.querySelector('contents.style-scope.ytd-rich-grid-renderer');
-  if (element) {
-    element.remove();
   }
 }
