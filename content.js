@@ -18,11 +18,13 @@ async function removeSidebar() {
   }
 }
 
-function removeRecommendations() {
+async function removeRecommendations() {
   console.log("Calling 'removeRecommendations()'");
+  let recommendations = await document.getElementById("secondary");
   var element = document.getElementById("secondary");
-  if (element) {
-    element.remove();
+  console.log(recommendations);
+  if (recommendations) {
+    recommendations.remove();
   }
 }
 
@@ -75,4 +77,22 @@ window.addEventListener("resize", (event) => {
 document.getElementById('start').addEventListener('click', (event) => {
   console.log("Button event");
   removeSidebar();
+});
+
+
+document.querySelector('ytd-video-renderer.style-scope.ytd-item-section-renderer').addEventListener('mouseover', (event) => {
+  console.log("Video clicked");
+  removeRecommendations();
+});
+
+
+document.addEventListener('click', function(event) {
+  console.log("Clicked");
+  if (event.target.matches('ytd-video-renderer.style-scope.ytd-item-section-renderer')) {
+    console.log("--- Video clicked");
+    removeRecommendations();
+  }
+  else {
+    console.log("--- No video clicked");
+  }
 });
