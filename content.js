@@ -1,38 +1,36 @@
-/* YT will try to instate the mini guide in the absence of the extended
-    sidebar. Therefore, we must remove one, wait for the substitution, then
-    remove the other. */
-async function removeSidebar() {
-  console.log("Calling 'removeSidebar()'")
+const targetNode = document.getElementById("content"); // Observer target
+const config = { attributes: true, childList: true, subtree: true }; // Observer settings
+const callback = (mutationList, observer) => { // Function to execute when observer detects mutations in target
+  removeSidebar();
+  removeRecommendations();
+  resizePlayer();
+};
+
+// Create observer instance and begin observing for mutations
+const observer = new MutationObserver(callback);
+observer.observe(targetNode, config);
+
+// Functions
+function removeSidebar() {
   var element = document.querySelector('ytd-app');
   if (element) {
     if (element.hasAttribute('mini-guide-visible')) {
       element.removeAttribute('mini-guide-visible');
-      wait(3000).then(() => element.removeAttribute('guide-persistent-and-visible'));
     }
     if (element.hasAttribute('guide-persistent-and-visible')) {
       element.removeAttribute('guide-persistent-and-visible');
-      wait(3000).then(() => element.removeAttribute('mini-guide-visible'));
     }
-    //element.removeAttribute('mini-guide-visible');
-    //element.removeAttribute('guide-persistent-and-visible');
   }
 }
 
-async function removeRecommendations() {
-  console.log("Calling 'removeRecommendations()'");
-  let recommendations = await document.getElementById("secondary");
+function removeRecommendations() {
   var element = document.getElementById("secondary");
-  console.log(recommendations);
-  if (recommendations) {
-    recommendations.remove();
+  if (element) {
+    element.remove();
   }
 }
 
-async function resizePlayer() {
-  console.log("Resizing player");
-
-  wait(1000);
-  
+function resizePlayer() {
   var videoPlayer = document.querySelector('video.video-stream.html5-main-video');
   var videoControls = document.querySelector('div.ytp-chrome-bottom');
   var videoBar = document.querySelector('div.ytp-chapter-hover-container');
@@ -50,49 +48,4 @@ async function resizePlayer() {
   if (videoBar) {
     videoBar.style.width = '-webkit-fill-available';
   }
-  
-
 }
-
-function wait(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
-
-/* Content is adjusted dynamically after DOM load
-Therefore, we wait for DOM load before removing items. */
-addEventListener('DOMContentLoaded', removeSidebar());
-wait(500).then(() => removeRecommendations());
-wait(500).then(() => resizePlayer());
-//removeRecommendations();
-//resizePlayer();
-
-/* When screen size thresholds are reached, YT tries to reinstate the sidebar
-Also, the video player needs manual resizing due to our other changes. */
-window.addEventListener("resize", (event) => {
-  removeSidebar();
-  resizePlayer();
-});
-
-// When the home button is clicked, YT tries to reinstate the sidebar
-document.getElementById('start').addEventListener('click', (event) => {
-  console.log("Button event");
-  removeSidebar();
-});
-
-
-document.querySelector('ytd-video-renderer.style-scope.ytd-item-section-renderer').addEventListener('mouseover', (event) => {
-  console.log("Video clicked");
-  removeRecommendations();
-});
-
-
-document.addEventListener('click', function(event) {
-  console.log("Clicked");
-  if (event.target.matches('ytd-video-renderer.style-scope.ytd-item-section-renderer')) {
-    console.log("--- Video clicked");
-    removeRecommendations();
-  }
-  else {
-    console.log("--- No video clicked");
-  }
-});
