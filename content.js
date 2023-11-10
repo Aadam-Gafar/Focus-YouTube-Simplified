@@ -34,7 +34,6 @@ function removeRecommendations() {
 function resizePlayer() {
   var videoPlayer = document.querySelector('video.video-stream.html5-main-video');
   var videoControls = document.querySelector('div.ytp-chrome-bottom');
-  var videoBar = document.querySelector('div.ytp-chapter-hover-container');
 
   if (videoPlayer) {
     videoPlayer.style.width = '-webkit-fill-available';
@@ -44,10 +43,6 @@ function resizePlayer() {
   if (videoControls) {
     videoControls.style.width = '-webkit-fill-available';
     videoControls.style.right = '12px';
-  }
-
-  if (videoBar) {
-    //videoBar.style.width = '-webkit-fill-available';
   }
 }
 
