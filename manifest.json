@@ -1,14 +1,18 @@
 {
     "manifest_version": 2,
    
-    "name": "Modify CSS and HTML",
-    "version": "0.1.0",
-    "description": "Lateral blog post demo extension",
+    "name": "TrueTube",
+    "version": "1.0.0",
+    "description": "A less addicting version of YouTube.",
    
     "content_scripts": [{
       "css": ["styles.css"],
       "js": ["content.js"],
       "matches": ["https://www.youtube.com/*"]
-    }]
+    }],
+
+    "icons": {
+      "128": "media/icon.png"
+    }
    
   }

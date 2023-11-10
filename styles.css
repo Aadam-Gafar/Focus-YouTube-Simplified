@@ -18,3 +18,11 @@ video.video-stream.html5-main-video {
   height: auto;
   width: -webkit-fill-available;
 }
+
+ytd-rich-grid-row {
+  display: none;
+}
+
+div.style-scope.ytd-rich-grid-renderer {
+  display: none;
+}
