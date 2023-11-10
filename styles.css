@@ -1,13 +1,13 @@
-#header {
-  visibility: hidden; /* Hides sidebar header */
+#header.style-scope.ytd-app {
+  display: none;  /* Hides sidebar header */
 }
 
 #guide-inner-content {
-  visibility: hidden; /* Hides extended sidebar */
+  display: none;  /* Hides extended sidebar */
 }
 
 [role=navigation] {
-  visibility: hidden; /* Hides mini sidebar */
+  display: none;  /* Hides mini sidebar */
 }
 
 #guide-button {
