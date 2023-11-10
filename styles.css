@@ -9,3 +9,7 @@
 [role=navigation] {
   visibility: hidden; /* Hides mini sidebar */
 }
+
+#guide-button {
+  display: none; /* Removes burger menu */
+}
