@@ -1,0 +1,11 @@
+#header {
+  visibility: hidden; /* Hides sidebar header */
+}
+
+#guide-inner-content {
+  visibility: hidden; /* Hides extended sidebar */
+}
+
+[role=navigation] {
+  visibility: hidden; /* Hides mini sidebar */
+}
