@@ -14,11 +14,6 @@
   display: none; /* Removes burger menu */
 }
 
-video.video-stream.html5-main-video {
-  height: auto !important; /* Resizes video player */
-  width: -webkit-fill-available !important;
-}
-
 div.style-scope.ytd-rich-grid-renderer {
   display: none !important; /* Removes home feed (and channel videos - bug) */
 }
@@ -67,3 +62,22 @@ ytd-notification-topbar-button-renderer {
 #search {
   padding: 0px !important;
 }
+
+/*#region VIDEO-PLAYER */
+
+video.video-stream.html5-main-video { /* Scales video to player size */
+  height: auto;
+  width: -webkit-fill-available;
+}
+
+div.ytp-chrome-bottom { /* Scales controls to player size */
+  width: -webkit-fill-available;
+  margin: 0px 12px;
+  left: 0px;
+}
+
+div.ytp-progress-bar-container { /* TEMPORARY - Hides progress bar */
+  display: none;
+}
+
+/*#endregion */
