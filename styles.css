@@ -66,18 +66,19 @@ ytd-notification-topbar-button-renderer {
 /*#region VIDEO-PLAYER */
 
 video.video-stream.html5-main-video { /* Scales video to player size */
-  height: auto;
-  width: -webkit-fill-available;
+  height: auto !important;
+  width: -webkit-fill-available !important;
 }
 
 div.ytp-chrome-bottom { /* Scales controls to player size */
-  width: -webkit-fill-available;
-  margin: 0px 12px;
-  left: 0px;
+  width: -webkit-fill-available !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  left: 0px !important;
 }
 
 div.ytp-progress-bar-container { /* TEMPORARY - Hides progress bar */
-  display: none;
+  display: none !important;
 }
 
 /*#endregion */
