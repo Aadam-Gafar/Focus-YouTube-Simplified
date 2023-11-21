@@ -32,8 +32,14 @@ ytd-notification-topbar-button-renderer {
 
 .style-scope.ytd-masthead {
   justify-content: center !important;
-  /* Centres masthead */
   margin: 0px !important;
+  /* Centres masthead */
+}
+
+#masthead {
+  display: flex !important;
+  justify-content: center !important;
+  /* Centres zoomed masthead */
 }
 
 #logo-icon {

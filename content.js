@@ -46,15 +46,12 @@ function setHome() { // Centres the search bar on the home page
 
   if (currentURL && slashCount < 3) {
     if (navElement) {
-      console.log("Restyling nav bar!");
       navElement.style.height = '-webkit-fill-available';
       navElement.style.display = 'flex';
       navElement.style.flexDirection = 'column';
       navElement.style.justifyContent = 'center';
     }
   } else {
-    console.log("Returning to normal...");
-    navElement.style.height = 'auto !important';
     navElement.style.setProperty('height', 'auto', 'important');
   }
 }
