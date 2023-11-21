@@ -5,6 +5,8 @@ const callback = (mutationList, observer) => { // Function to execute when obser
   removeRecommendations();
   resizePlayer();
   removeFeed();
+  cleanNavbar();
+  cleanPills();
 };
 
 // Create observer instance and begin observing for mutations
@@ -52,5 +54,24 @@ function removeFeed() {
   if (element) {
     element.style.display = 'none';
     element.remove();
+  }
+}
+
+function cleanNavbar() {
+  var element = document.getElementById('end');
+  console.log("Cleaning navbar run" + element);
+  if (element) {
+    element.style.display = 'none';
+    element.remove();
+  }
+}
+
+function cleanPills() { // Removes 'Shorts' pill from Search page
+  var element = document.querySelector('[title="Shorts"]');
+  if (element) {
+    var parent = element.parentElement;
+    if (parent) {
+      parent.remove();
+    }
   }
 }

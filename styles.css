@@ -31,6 +31,10 @@ div.style-scope.ytd-rich-grid-renderer {
   display: none !important; /* Temporary fix - removes channel info / links */
 }
 
+ytd-channel-renderer {
+  display: none !important; /* Temporary fix - removes channel search items */
+}
+
 #ytp-chapter-title-chevron {
   display: none !important; /* Removes (now) redundant chapter expander */
 }
@@ -41,4 +45,25 @@ ytd-reel-shelf-renderer {
 
 ytd-shelf-renderer {
   display: none !important; /* Removes irrelevant search shelves */
+}
+
+ytd-topbar-menu-button-renderer {
+  display: none !important; /* Removes upload button */
+}
+
+ytd-notification-topbar-button-renderer {
+  display: none !important; /* Removes notifications */
+}
+
+.style-scope.ytd-masthead {
+  justify-content: center !important; /* Centres masthead */
+  margin: 0px;
+}
+
+#logo-icon {
+  padding: 18px 14px 18px 0px !important; /* Makes padding consistent with new edits */
+}
+
+#search {
+  padding: 0px !important;
 }
