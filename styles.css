@@ -20,5 +20,17 @@ video.video-stream.html5-main-video {
 }
 
 div.style-scope.ytd-rich-grid-renderer {
-  display: none !important;
+  display: none !important; /* Removes home feed (and channel videos - bug) */
+}
+
+#channel-info {
+  display: none !important; /* Temporary fix - removes channel info / links */
+}
+
+#top-row {
+  display: none !important; /* Temporary fix - removes channel info / links */
+}
+
+#ytp-chapter-title-chevron {
+  display: none !important; /* Removes (now) redundant chapter expander */
 }
