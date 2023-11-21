@@ -1,40 +1,59 @@
 /* #region GENERAL */
 
 #header.style-scope.ytd-app {
-  display: none !important;  /* Hides sidebar header */
+  display: none !important;
+  /* Hides sidebar header */
 }
 
 #guide-inner-content {
-  display: none !important;  /* Hides extended sidebar */
+  display: none !important;
+  /* Hides extended sidebar */
 }
 
 [role=navigation] {
-  display: none !important;  /* Hides mini sidebar */
+  display: none !important;
+  /* Hides mini sidebar */
 }
 
 #guide-button {
-  display: none !important; /* Removes burger menu */
+  display: none !important;
+  /* Removes burger menu */
 }
 
 ytd-topbar-menu-button-renderer {
-  display: none !important; /* Removes upload button */
+  display: none !important;
+  /* Removes upload button */
 }
 
 ytd-notification-topbar-button-renderer {
-  display: none !important; /* Removes notifications */
+  display: none !important;
+  /* Removes notifications */
 }
 
 .style-scope.ytd-masthead {
-  justify-content: center !important; /* Centres masthead */
+  justify-content: center !important;
+  /* Centres masthead */
   margin: 0px !important;
 }
 
 #logo-icon {
-  padding: 18px 14px 18px 0px !important; /* Neatens logo */
+  padding: 18px 14px 18px 0px !important;
+  /* Neatens logo */
 }
 
 #search {
-  padding: 0px !important; /* Neatens search bar */
+  padding: 0px !important;
+  /* Neatens search bar */
+}
+
+#end {
+  display: none !important;
+  /* Also neatens search bar */
+}
+
+#voice-search-button {
+  display: none !important;
+  /* Also, also neatens search bar */
 }
 
 /* #endregion */
@@ -42,7 +61,8 @@ ytd-notification-topbar-button-renderer {
 /* #region HOME */
 
 div.style-scope.ytd-rich-grid-renderer {
-  display: none !important; /* Removes home feed (and channel videos - bug) */
+  display: none !important;
+  /* Removes home feed (and channel videos - bug) */
 }
 
 /* #endregion */
@@ -50,47 +70,56 @@ div.style-scope.ytd-rich-grid-renderer {
 /* #region SEARCH */
 
 #channel-info {
-  display: none !important; /* Temporary fix - removes channel info / links */
+  display: none !important;
+  /* Temporary fix - removes channel info / links */
 }
 
 #top-row {
-  display: none !important; /* Temporary fix - removes channel info / links */
+  display: none !important;
+  /* Temporary fix - removes channel info / links */
 }
 
 ytd-channel-renderer {
-  display: none !important; /* Temporary fix - removes channel search items */
+  display: none !important;
+  /* Temporary fix - removes channel search items */
 }
 
 ytd-reel-shelf-renderer {
-  display: none !important; /* Removes YouTube Shorts reel shelf */
+  display: none !important;
+  /* Removes YouTube Shorts reel shelf */
 }
 
 ytd-shelf-renderer {
-  display: none !important; /* Removes irrelevant search shelves */
+  display: none !important;
+  /* Removes irrelevant search shelves */
 }
 
 /* #endregion */
 
 /*#region VIDEO */
 
-video.video-stream.html5-main-video { /* Scales video to player size */
+video.video-stream.html5-main-video {
+  /* Scales video to player size */
   height: auto !important;
   width: -webkit-fill-available !important;
 }
 
-div.ytp-chrome-bottom { /* Scales controls to player size */
+div.ytp-chrome-bottom {
+  /* Scales controls to player size */
   width: -webkit-fill-available !important;
   margin: 0px !important;
   padding: 0px !important;
   left: 0px !important;
 }
 
-div.ytp-progress-bar-container { /* TEMPORARY - Hides progress bar */
+div.ytp-progress-bar-container {
+  /* TEMPORARY - Hides progress bar */
   display: none !important;
 }
 
 #ytp-chapter-title-chevron {
-  display: none !important; /* Removes (now) redundant chapter expander */
+  display: none !important;
+  /* Removes (now) redundant chapter expander */
 }
 
 /*#endregion */
