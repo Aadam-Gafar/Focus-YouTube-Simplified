@@ -1,6 +1,5 @@
 {
     "manifest_version": 3,
-   
     "name": "TrueTube",
     "version": "1.0.0",
     "description": "A less addicting version of YouTube.",
@@ -12,7 +11,13 @@
     }],
 
     "icons": {
-      "128": "media/icon.png"
-    }
-   
+      "128": "icon.png"
+    },
+
+    "web_accessible_resources": [
+      {
+        "resources": ["welcome.png"],
+        "matches": ["https://www.youtube.com/*"]
+      }
+    ]
   }

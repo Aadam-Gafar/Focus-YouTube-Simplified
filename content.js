@@ -37,22 +37,18 @@ function cleanPills() { // Removes 'Shorts' pill from search page
 function setHome() { // Centres the search bar on the home page
   var currentURL = (window.location.href).slice(0, -1); // Ignore last character (e.g. '/')
   var slashCount = (currentURL.match(/\//g) || []).length;
-  var navElement = document.getElementById('masthead-container');
+  var mainSection = document.getElementsByTagName("ytd-app");
+  var imageUrl = chrome.runtime.getURL('welcome.png');
 
-  var element = document.querySelector('.style-scope.ytd-app');
-  if (element && element.hasAttribute('hidden')) {
-    console.log("Hidden");
-  }
-
-  if (currentURL && slashCount < 3) {
-    if (navElement) {
-      navElement.style.height = '-webkit-fill-available';
-      navElement.style.display = 'flex';
-      navElement.style.flexDirection = 'column';
-      navElement.style.justifyContent = 'center';
+  if (mainSection.length > 0 && mainSection[0] instanceof HTMLElement) {
+    if (slashCount < 3) {
+      mainSection[0].style.backgroundImage = `url('${imageUrl}')`;
+      mainSection[0].style.backgroundSize = 'contain';
+      mainSection[0].style.backgroundRepeat = 'no-repeat';
+      mainSection[0].style.backgroundPosition = 'center';
+    } else {
+      mainSection[0].style.background = null;
     }
-  } else {
-    navElement.style.setProperty('height', 'auto', 'important');
   }
 }
 
