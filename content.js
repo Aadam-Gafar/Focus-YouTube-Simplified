@@ -38,13 +38,13 @@ function resizePlayer() {
   var videoControls = document.querySelector('div.ytp-chrome-bottom');
 
   if (videoPlayer) {
-    videoPlayer.style.width = '-webkit-fill-available';
-    videoPlayer.style.height = 'auto';
+    videoPlayer.style.width = '-webkit-fill-available !important';
+    videoPlayer.style.height = 'auto !important';
   }
 
   if (videoControls) {
-    videoControls.style.width = '-webkit-fill-available';
-    videoControls.style.right = '12px';
+    videoControls.style.width = '-webkit-fill-available !important';
+    videoControls.style.right = '12px !important';
   }
 }
 

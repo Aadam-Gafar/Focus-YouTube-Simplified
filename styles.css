@@ -15,8 +15,8 @@
 }
 
 video.video-stream.html5-main-video {
-  height: auto;
-  width: -webkit-fill-available;
+  height: auto !important; /* Resizes video player */
+  width: -webkit-fill-available !important;
 }
 
 div.style-scope.ytd-rich-grid-renderer {
