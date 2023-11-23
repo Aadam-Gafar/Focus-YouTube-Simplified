@@ -62,6 +62,11 @@ ytd-notification-topbar-button-renderer {
   /* Also, also neatens search bar */
 }
 
+.miniplayer {
+  display: none !important;
+  /* Hides miniplayer */
+}
+
 /* #endregion */
 
 /* #region HOME */
@@ -126,6 +131,21 @@ div.ytp-progress-bar-container {
 #ytp-chapter-title-chevron {
   display: none !important;
   /* Removes (now) redundant chapter expander */
+}
+
+#author-thumbnail {
+  display: none !important;
+  /* Removes comment profile picture */
+}
+
+ytd-comment-replies-renderer {
+  margin: 0 !important;
+  /* Removes replies indent (for neatness) - originally 56px */
+}
+
+ytd-comment-renderer[is-reply] {
+  margin-left: 56px !important;
+  /* Inserts indent to replies (for neatness) - originally 0px */
 }
 
 /*#endregion */

@@ -19,8 +19,12 @@ observer.observe(targetNode, config);
 // Removes recommendations sidebar on video page
 function removeRecommendations() {
   var element = document.getElementById("secondary");
+  var element2 = document.getElementById("related");
   if (element) {
     element.remove();
+  }
+  if (element2) {
+    element2.remove();
   }
 }
 
