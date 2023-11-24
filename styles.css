@@ -113,6 +113,12 @@ video.video-stream.html5-main-video {
   /* Scales video to player size */
   height: auto !important;
   width: -webkit-fill-available !important;
+  top: 0 !important;
+}
+
+.ytp-endscreen-content {
+  display: none !important;
+  /* Removes endscreen recommendations */
 }
 
 div.ytp-chrome-bottom {
