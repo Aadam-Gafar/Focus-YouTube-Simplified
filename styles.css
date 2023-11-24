@@ -118,7 +118,7 @@ video.video-stream.html5-main-video {
 
 .ytp-endscreen-content {
   display: none !important;
-  /* Removes endscreen recommendations */
+  /* Removes endscreen */
 }
 
 div.ytp-chrome-bottom {
@@ -131,7 +131,7 @@ div.ytp-chrome-bottom {
 
 div.ytp-progress-bar-container {
   /* TEMPORARY - Hides progress bar */
-  display: none !important;
+  
 }
 
 #ytp-chapter-title-chevron {
