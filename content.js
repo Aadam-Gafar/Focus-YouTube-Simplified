@@ -28,8 +28,9 @@ function resizePlayer() {
   var columns = document.getElementById("columns");
   var leftVal = (hWidth/2) - (pWidth/2);
   console.log("Setting left to: " + leftVal);
-  columns.style.setProperty("left", `${leftVal}px`, "important");
-  columns.style.position = "relative";
+  columns.style.setProperty("padding-left", `${leftVal}px`, "important");
+  columns.style.setProperty("margin", "0px", "important");
+  //columns.style.position = "relative";
 }
 
 // Removes recommendations sidebar on video page
@@ -37,12 +38,12 @@ function removeRecommendations() {
   var element = document.getElementById("secondary");
   var element2 = document.getElementById("related");
   if (element) {
-    element.style.opacity = '0';
+    element.style.visibility = 'hidden';
     //element.remove();
   }
   if (element2) {
-    //element2.style.opacity = '0';
-    element2.remove();
+    element2.style.visibility = 'hidden';
+    //element2.remove();
   }
 }
 
