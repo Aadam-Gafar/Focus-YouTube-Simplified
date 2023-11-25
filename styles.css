@@ -133,7 +133,12 @@ ytd-comment-renderer[is-reply] {
 
 .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles {
   display: none;
-  /* Removes endscreen recommendations */
+  /* Removes zoomed endscreen recommendations */
+}
+
+.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles {
+  display: none;
+  /* Removes widescreen endscreen recommendations */
 }
 
 /*#endregion */
