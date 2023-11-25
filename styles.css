@@ -20,25 +20,16 @@
   /* Removes burger menu */
 }
 
-ytd-topbar-menu-button-renderer {
+#button {
   display: none !important;
-  /* Removes upload button */
-}
-
-ytd-notification-topbar-button-renderer {
-  display: none !important;
-  /* Removes notifications */
+  /* Removes masthead buttons */
 }
 
 .style-scope.ytd-masthead {
-  justify-content: center !important;
-  margin: 0px !important;
   /* Centres masthead */
 }
 
 #masthead {
-  display: flex !important;
-  justify-content: center !important;
   /* Centres zoomed masthead */
 }
 
@@ -50,11 +41,6 @@ ytd-notification-topbar-button-renderer {
 #search {
   padding: 0px !important;
   /* Neatens search bar */
-}
-
-#end {
-  display: none !important;
-  /* Also neatens search bar */
 }
 
 #voice-search-button {
