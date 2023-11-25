@@ -1,8 +1,8 @@
 /* #region GENERAL */
 
-body {
-  overflow: hidden !important;
-  /* Removes scrollbar area (for centering) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 #header.style-scope.ytd-app {
