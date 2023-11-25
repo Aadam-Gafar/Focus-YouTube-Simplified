@@ -1,5 +1,10 @@
 /* #region GENERAL */
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 #header.style-scope.ytd-app {
   display: none !important;
   /* Hides sidebar header */
