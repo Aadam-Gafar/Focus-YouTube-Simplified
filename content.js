@@ -4,7 +4,6 @@ const targetNode = document.getElementById("content"); // Observer target
 const config = { attributes: true, childList: true, subtree: true }; // Observer settings
 const callback = (mutationList, observer) => { // Function to execute when observer detects mutations in target
   setHome();
-  resizePlayer();
   removeRecommendations();
   cleanPills();
 };
@@ -17,33 +16,15 @@ observer.observe(targetNode, config);
 
 // #region FUNCTIONS
 
-// Prevents video player and UI size mismatch
-function resizePlayer() {
-  var html = document.getElementsByTagName("html");
-  var hWidth = html[0].clientWidth;
-
-  var primary = document.getElementById("primary");
-  var pWidth = primary.clientWidth;
-
-  var columns = document.getElementById("columns");
-  var leftVal = (hWidth/2) - (pWidth/2);
-  console.log("Setting left to: " + leftVal);
-  columns.style.setProperty("padding-left", `${leftVal}px`, "important");
-  columns.style.setProperty("margin", "0px", "important");
-  //columns.style.position = "relative";
-}
-
 // Removes recommendations sidebar on video page
 function removeRecommendations() {
   var element = document.getElementById("secondary");
   var element2 = document.getElementById("related");
   if (element) {
-    element.style.visibility = 'hidden';
-    //element.remove();
+    element.remove();
   }
   if (element2) {
-    element2.style.visibility = 'hidden';
-    //element2.remove();
+    element2.remove();
   }
 }
 

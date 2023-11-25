@@ -1,10 +1,5 @@
 /* #region GENERAL */
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
-
 #header.style-scope.ytd-app {
   display: none !important;
   /* Hides sidebar header */
@@ -25,29 +20,14 @@
   /* Removes burger menu */
 }
 
-yt-icon-button.style-scope.ytd-topbar-menu-button-renderer.style-default {
+ytd-topbar-menu-button-renderer {
   display: none !important;
   /* Removes upload button */
-}
-
-#end {
-  min-width: auto !important;
-  /* Less space around end buttons */
 }
 
 ytd-notification-topbar-button-renderer {
   display: none !important;
   /* Removes notifications */
-}
-
-ytd-topbar-logo-renderer {
-  padding-right: 6px !important;
-  /* Neatens spacing on navbar */
-}
-
-yt-img-shadow {
-  margin: 0px 6px !important;
-  /* Neatens spacing on navbar */
 }
 
 .style-scope.ytd-masthead {
@@ -72,10 +52,10 @@ yt-img-shadow {
   /* Neatens search bar */
 }
 
-.style-scope.ytd-searchbox {
-  margin-left: 0px !important;
+#end {
+  display: none !important;
+  /* Also neatens search bar */
 }
-
 
 #voice-search-button {
   display: none !important;
@@ -129,9 +109,23 @@ ytd-shelf-renderer {
 
 /*#region VIDEO */
 
-.ytp-endscreen-content {
+video.video-stream.html5-main-video {
+  /* Scales video to player size */
+  height: auto !important;
+  width: -webkit-fill-available !important;
+}
+
+div.ytp-chrome-bottom {
+  /* Scales controls to player size */
+  width: -webkit-fill-available !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  left: 0px !important;
+}
+
+div.ytp-progress-bar-container {
+  /* TEMPORARY - Hides progress bar */
   display: none !important;
-  /* Removes endscreen */
 }
 
 #ytp-chapter-title-chevron {
