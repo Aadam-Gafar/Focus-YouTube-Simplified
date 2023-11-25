@@ -131,4 +131,9 @@ ytd-comment-renderer[is-reply] {
   display: none;
 }
 
+.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles {
+  display: none;
+  /* Removes endscreen recommendations */
+}
+
 /*#endregion */
