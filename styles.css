@@ -53,6 +53,16 @@
   /* Hides miniplayer */
 }
 
+yt-img-shadow {
+  margin-right: 0px !important;
+  /* Fixes misaligned profile */
+}
+
+#avatar-btn {
+  padding-right: 0px !important;
+  /* Fixes misaligned profile */
+}
+
 /* #endregion */
 
 /* #region HOME */
