@@ -109,25 +109,6 @@ ytd-shelf-renderer {
 
 /*#region VIDEO */
 
-video.video-stream.html5-main-video {
-  /* Scales video to player size */
-  height: auto !important;
-  width: -webkit-fill-available !important;
-}
-
-div.ytp-chrome-bottom {
-  /* Scales controls to player size */
-  width: -webkit-fill-available !important;
-  margin: 0px !important;
-  padding: 0px !important;
-  left: 0px !important;
-}
-
-div.ytp-progress-bar-container {
-  /* TEMPORARY - Hides progress bar */
-  display: none !important;
-}
-
 #ytp-chapter-title-chevron {
   display: none !important;
   /* Removes (now) redundant chapter expander */
@@ -146,6 +127,22 @@ ytd-comment-replies-renderer {
 ytd-comment-renderer[is-reply] {
   margin-left: 56px !important;
   /* Inserts indent to replies (for neatness) - originally 0px */
+}
+
+#primary {
+  margin-right: 201px;
+  padding-left: 225px;
+}
+
+@media screen and (max-width: 958px) {
+  #primary {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+#secondary {
+  display: none;
 }
 
 /*#endregion */

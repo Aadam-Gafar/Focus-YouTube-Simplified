@@ -18,10 +18,10 @@ observer.observe(targetNode, config);
 
 // Removes recommendations sidebar on video page
 function removeRecommendations() {
-  var element = document.getElementById("secondary");
-  var element2 = document.getElementById("related");
+  var element = document.getElementById("secondary"); // widescreen recommendations
+  var element2 = document.getElementById("related"); // zoomed recommendations
   if (element) {
-    element.remove();
+    element.style.visibility = 'hidden';
   }
   if (element2) {
     element2.remove();
