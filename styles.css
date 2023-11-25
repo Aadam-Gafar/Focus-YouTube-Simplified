@@ -129,29 +129,9 @@ ytd-shelf-renderer {
 
 /*#region VIDEO */
 
-video.video-stream.html5-main-video {
-  /* Scales video to player size */
-  height: auto !important;
-  width: -webkit-fill-available !important;
-  top: 0 !important;
-}
-
 .ytp-endscreen-content {
   display: none !important;
   /* Removes endscreen */
-}
-
-div.ytp-chrome-bottom {
-  /* Scales controls to player size */
-  width: -webkit-fill-available !important;
-  margin: 0px !important;
-  padding: 0px !important;
-  left: 0px !important;
-}
-
-div.ytp-progress-bar-container {
-  /* TEMPORARY - Hides progress bar */
-  
 }
 
 #ytp-chapter-title-chevron {
