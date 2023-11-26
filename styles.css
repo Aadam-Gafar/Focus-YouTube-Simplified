@@ -2,7 +2,8 @@
 
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 #header.style-scope.ytd-app {
@@ -154,6 +155,11 @@ ytd-comment-renderer[is-reply] {
 .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles {
   display: none;
   /* Removes widescreen endscreen recommendations */
+}
+
+#author-text {
+  pointer-events: none;
+  cursor: default;
 }
 
 /*#endregion */
