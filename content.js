@@ -6,6 +6,7 @@ const callback = (mutationList, observer) => { // Function to execute when obser
   setHome();
   removeRecommendations();
   cleanPills();
+  disableAutoplay();
 };
 
 // Create observer instance and begin observing for mutations
@@ -15,6 +16,20 @@ observer.observe(targetNode, config);
 // #endregion
 
 // #region FUNCTIONS
+
+// Disables the autoplay feature
+function disableAutoplay() {
+  var currentURL = window.location.href;
+  if (currentURL.includes("watch")) {
+    var autoplayElement = document.getElementsByClassName("ytp-autonav-toggle-button")[0];
+    if (autoplayElement) {
+      var ariaCheckedValue = autoplayElement.getAttribute("aria-checked");
+      if (ariaCheckedValue == "true") {
+        autoplayElement.setAttribute("aria-checked", "false");
+      }
+    }
+  }
+}
 
 // Removes recommendations sidebar on video page
 function removeRecommendations() {

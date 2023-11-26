@@ -167,4 +167,8 @@ ytd-comment-renderer[is-reply] {
   cursor: default;
 }
 
+button[data-tooltip-target-id=ytp-autonav-toggle-button] {
+  display: none !important;
+}
+
 /*#endregion */
