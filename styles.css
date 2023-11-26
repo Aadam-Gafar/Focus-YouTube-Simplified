@@ -31,6 +31,11 @@
   /* Removes masthead buttons */
 }
 
+ytd-notification-topbar-button-renderer {
+  display: none !important;
+  /* Removes notification button */
+}
+
 .style-scope.ytd-masthead {
   /* Centres masthead */
 }
