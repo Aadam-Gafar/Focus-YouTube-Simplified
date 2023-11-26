@@ -165,6 +165,13 @@ ytd-comment-renderer[is-reply] {
 #author-text {
   pointer-events: none;
   cursor: default;
+  /* Removes links to channel in comments */
+}
+
+#name {
+  pointer-events: none;
+  cursor: default;
+  /* Removes links to channel in comments */
 }
 
 button[data-tooltip-target-id=ytp-autonav-toggle-button] {
