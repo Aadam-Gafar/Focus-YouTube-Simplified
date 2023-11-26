@@ -9,6 +9,8 @@ const callback = (mutationList, observer) => { // Function to execute when obser
   disableAutoplay();
 };
 
+window.addEventListener("resize", removeRecommendations);
+
 // Create observer instance and begin observing for mutations
 const observer = new MutationObserver(callback);
 observer.observe(targetNode, config);
