@@ -171,4 +171,8 @@ button[data-tooltip-target-id=ytp-autonav-toggle-button] {
   display: none !important;
 }
 
+#creator-thumbnail {
+  display: none !important;
+}
+
 /*#endregion */
