@@ -74,6 +74,16 @@ yt-img-shadow {
   /* Fixes misaligned profile */
 }
 
+a[href*="@"] {
+  pointer-events: none;
+  /* Disables links with @ (i.e. channels) */
+}
+
+a[href*="channel"] {
+  pointer-events: none;
+  /* Disables links with @ (i.e. channels) */
+}
+
 /* #endregion */
 
 /* #region HOME */

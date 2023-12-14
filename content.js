@@ -1,5 +1,7 @@
 // #region CODE
 
+initialClean();
+
 document.addEventListener('keydown', function(event) { // Disables 'i' to enable miniplayer
   console.log(" SP");
   if (event.key == 'i') {
@@ -25,6 +27,13 @@ observer.observe(targetNode, config);
 // #endregion
 
 // #region FUNCTIONS
+
+function initialClean() { // Runs all functions on load
+  disableAutoplay();
+  removeRecommendations();
+  cleanPills();
+  setHome();
+}
 
 // Disables the autoplay feature
 function disableAutoplay() {
