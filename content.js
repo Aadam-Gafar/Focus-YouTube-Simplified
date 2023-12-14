@@ -1,5 +1,12 @@
 // #region CODE
 
+document.addEventListener('keydown', function(event) { // Disables 'i' to enable miniplayer
+  console.log(" SP");
+  if (event.key == 'i') {
+    event.stopPropagation();
+  }
+}, true);
+
 const targetNode = document.getElementById("content"); // Observer target
 const config = { attributes: true, childList: true, subtree: true }; // Observer settings
 const callback = (mutationList, observer) => { // Function to execute when observer detects mutations in target

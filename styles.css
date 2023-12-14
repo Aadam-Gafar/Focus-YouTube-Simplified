@@ -112,6 +112,11 @@ ytd-shelf-renderer {
   /* Removes irrelevant search shelves */
 }
 
+ytd-secondary-search-container-renderer {
+  display: none !important;
+  /* Removes sidebar info in search */
+}
+
 /* #endregion */
 
 /*#region VIDEO */
@@ -180,6 +185,11 @@ button[data-tooltip-target-id=ytp-autonav-toggle-button] {
 
 #creator-thumbnail {
   display: none !important;
+}
+
+.ytp-miniplayer-button.ytp-button {
+  display: none !important;
+  /* Removes miniplayer button from video */
 }
 
 /*#endregion */
