@@ -1,15 +1,12 @@
 {
   "manifest_version": 3,
   "name": "TrueTube",
-  "version": "1.5.0",
+  "version": "1.7.0",
   "description": "This is not YouTube as entertainment, it is YouTube as a tool.",
   "content_scripts": [
     {
       "css": [
         "styles.css"
-      ],
-      "js": [
-        "content.js"
       ],
       "matches": [
         "https://www.youtube.com/*"
@@ -18,15 +15,5 @@
   ],
   "icons": {
     "128": "icon.png"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "welcome.png"
-      ],
-      "matches": [
-        "https://www.youtube.com/*"
-      ]
-    }
-  ]
+  }
 }

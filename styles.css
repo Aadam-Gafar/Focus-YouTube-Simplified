@@ -1,205 +1,46 @@
-/* #region GENERAL */
+/* #region HOME */
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  /* make scrollbar transparent */
-}
-
-#header.style-scope.ytd-app {
+div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-inner-content {
+  /* Removes homepage recommendations */
+  /* Removes burger menu icon */
+  /* Removes start banner icons */
+  /* Removes end banner icons */
+  /* Removes sidebar */
   display: none !important;
-  /* Hides sidebar header */
 }
 
-#guide-inner-content {
-  display: none !important;
-  /* Hides extended sidebar */
-}
-
-[role=navigation] {
-  display: none !important;
-  /* Hides mini sidebar */
-}
-
-#guide-button {
-  display: none !important;
-  /* Removes burger menu */
-}
-
-#button {
-  display: none !important;
-  /* Removes masthead buttons */
-}
-
-ytd-notification-topbar-button-renderer {
-  display: none !important;
-  /* Removes notification button */
-}
-
-.style-scope.ytd-masthead {
-  /* Centres masthead */
-}
-
-#masthead {
-  /* Centres zoomed masthead */
-}
-
-#logo-icon {
-  padding: 18px 14px 18px 0px !important;
-  /* Neatens logo */
-}
-
-#search {
-  padding: 0px !important;
-  /* Neatens search bar */
-}
-
-#voice-search-button {
-  display: none !important;
-  /* Also, also neatens search bar */
-}
-
-.miniplayer {
-  display: none !important;
-  /* Hides miniplayer */
-}
-
-yt-img-shadow {
-  margin-right: 0px !important;
-  /* Fixes misaligned profile */
-}
-
-#avatar-btn {
-  padding-right: 0px !important;
-  /* Fixes misaligned profile */
-}
-
-a[href*="@"] {
-  pointer-events: none;
-  /* Disables links with @ (i.e. channels) */
-}
-
-a[href*="channel"] {
-  pointer-events: none;
-  /* Disables links with @ (i.e. channels) */
+#container {
+  /* Centres banner content */
+  justify-content: center !important;
 }
 
 /* #endregion */
 
-/* #region HOME */
+/* #region WATCH */
 
-div.style-scope.ytd-rich-grid-renderer {
+#primary {
+  /* Centres YouTube video */
+  margin-right: 201px !important;
+  padding-left: 225px !important;
+}
+
+#secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer {
+  /* Removes right-hand side recommendations */
+  /* Removes underneath recommendations (zoomed) */
+  /* Removes metadata boxes under description */
+  /* Removes box to write comments */
+  /* Due to removing simple-box, adjusts comments title for aesthetics */
   display: none !important;
-  /* Removes home feed (and channel videos - bug) */
 }
 
 /* #endregion */
 
 /* #region SEARCH */
 
-#channel-info {
+ytd-shelf-renderer, ytd-reel-shelf-renderer {
+  /* Removes shelf recommendations */
+  /* Removes Shorts shelf */
   display: none !important;
-  /* Temporary fix - removes channel info / links */
-}
-
-#top-row {
-  display: none !important;
-  /* Temporary fix - removes channel info / links */
-}
-
-ytd-channel-renderer {
-  display: none !important;
-  /* Temporary fix - removes channel search items */
-}
-
-ytd-reel-shelf-renderer {
-  display: none !important;
-  /* Removes YouTube Shorts reel shelf */
-}
-
-ytd-shelf-renderer {
-  display: none !important;
-  /* Removes irrelevant search shelves */
-}
-
-ytd-secondary-search-container-renderer {
-  display: none !important;
-  /* Removes sidebar info in search */
 }
 
 /* #endregion */
-
-/*#region VIDEO */
-
-#ytp-chapter-title-chevron {
-  display: none !important;
-  /* Removes (now) redundant chapter expander */
-}
-
-#author-thumbnail {
-  display: none !important;
-  /* Removes comment profile picture */
-}
-
-ytd-comment-replies-renderer {
-  margin: 0 !important;
-  /* Removes replies indent (for neatness) - originally 56px */
-}
-
-ytd-comment-renderer[is-reply] {
-  margin-left: 56px !important;
-  /* Inserts indent to replies (for neatness) - originally 0px */
-}
-
-#primary {
-  margin-right: 201px;
-  padding-left: 225px;
-}
-
-@media screen and (max-width: 958px) {
-  #primary {
-    margin-right: 0px;
-    padding-left: 0px;
-  }
-}
-
-#secondary {
-  display: none;
-}
-
-.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles {
-  display: none;
-  /* Removes zoomed endscreen recommendations */
-}
-
-.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles {
-  display: none;
-  /* Removes widescreen endscreen recommendations */
-}
-
-#author-text {
-  pointer-events: none;
-  cursor: default;
-  /* Removes links to channel in comments */
-}
-
-#name {
-  pointer-events: none;
-  cursor: default;
-  /* Removes links to channel in comments */
-}
-
-button[data-tooltip-target-id=ytp-autonav-toggle-button] {
-  display: none !important;
-}
-
-#creator-thumbnail {
-  display: none !important;
-}
-
-.ytp-miniplayer-button.ytp-button {
-  display: none !important;
-  /* Removes miniplayer button from video */
-}
-
-/*#endregion */
