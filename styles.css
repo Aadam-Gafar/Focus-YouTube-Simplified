@@ -1,6 +1,6 @@
 /* #region HOME */
 
-div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-inner-content {
+div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-content {
   /* Removes homepage recommendations */
   /* Removes burger menu icon */
   /* Removes start banner icons */
@@ -37,10 +37,21 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-inne
 
 /* #region SEARCH */
 
-ytd-shelf-renderer, ytd-reel-shelf-renderer {
+ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer {
   /* Removes shelf recommendations */
   /* Removes Shorts shelf */
+  /* Removes sidebar */
   display: none !important;
+}
+
+#container {
+  /* Widens search page */
+  width: auto !important;
+}
+
+#page-manager {
+  /* Widens search page */
+  margin-left: 0px !important;
 }
 
 /* #endregion */
