@@ -65,6 +65,7 @@ ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channe
 a[href*="@"] {
   /* Disables links with @ (i.e. channels) */
   pointer-events: none;
+  outline: none !important;
 }
 
 /* #endregion */
