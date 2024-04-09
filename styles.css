@@ -26,7 +26,7 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
 
 #secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
 #flexible-item-buttons, #button-shape, segmented-like-dislike-button-view-model, #subscribe-button,
-#community-post {
+#community-post, .html5-endscreen {
   /* Removes right-hand side recommendations */
   /* Removes underneath recommendations (zoomed) */
   /* Removes metadata boxes under description */
@@ -37,6 +37,7 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
   /* Removes like buttons */
   /* Removes subscribe button */
   /* Removes community post option when sharing */
+  /* Removes end-of-video grid recommendations */
   display: none !important;
 }
 
