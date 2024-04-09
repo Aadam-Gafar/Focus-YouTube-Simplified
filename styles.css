@@ -19,9 +19,22 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
 /* #region WATCH */
 
 #primary {
-  /* Centres YouTube video */
-  margin-right: 201px !important;
-  padding-left: 225px !important;
+  /* Centres video player */
+  margin-right: 201px;
+  padding-left: 225px;
+}
+
+@media screen and (max-width: 958px) {
+  #primary {
+    /* Centres video player */
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+#secondary {
+  /* Centres video player */
+  display: none;
 }
 
 #secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
