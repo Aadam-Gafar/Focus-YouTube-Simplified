@@ -24,12 +24,19 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
   padding-left: 225px !important;
 }
 
-#secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer {
+#secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
+#flexible-item-buttons, #button-shape, segmented-like-dislike-button-view-model, #subscribe-button,
+#community-post {
   /* Removes right-hand side recommendations */
   /* Removes underneath recommendations (zoomed) */
   /* Removes metadata boxes under description */
   /* Removes box to write comments */
   /* Due to removing simple-box, adjusts comments title for aesthetics */
+  /* Removes download button */
+  /* Removes 'More' button (three dots) */
+  /* Removes like buttons */
+  /* Removes subscribe button */
+  /* Removes community post option when sharing */
   display: none !important;
 }
 
@@ -53,6 +60,11 @@ ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channe
 #page-manager {
   /* Widens search page */
   margin-left: 0px !important;
+}
+
+a[href*="@"] {
+  /* Disables links with @ (i.e. channels) */
+  pointer-events: none;
 }
 
 /* #endregion */
