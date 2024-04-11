@@ -39,7 +39,7 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
 
 #secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
 #flexible-item-buttons, #button-shape, segmented-like-dislike-button-view-model, #subscribe-button,
-#community-post, .html5-endscreen {
+#community-post, .html5-endscreen, ytd-comment-engagement-bar, #creator-thumbnail {
   /* Removes right-hand side recommendations */
   /* Removes underneath recommendations (zoomed) */
   /* Removes metadata boxes under description */
@@ -51,6 +51,8 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
   /* Removes subscribe button */
   /* Removes community post option when sharing */
   /* Removes end-of-video grid recommendations */
+  /* Removes comment reply area */
+  /* Removes creator reply indicator */
   display: none !important;
 }
 
