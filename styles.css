@@ -68,11 +68,6 @@ ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channe
   display: none !important;
 }
 
-#container {
-  /* Widens search page */
-  width: auto !important;
-}
-
 #page-manager {
   /* Widens search page */
   margin-left: 0px !important;
