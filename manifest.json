@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TrueTube",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "This is not YouTube as entertainment, it is YouTube as a tool.",
   "content_scripts": [
     {

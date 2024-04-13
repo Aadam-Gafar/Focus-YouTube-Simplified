@@ -60,11 +60,12 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
 
 /* #region SEARCH */
 
-ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channel-renderer {
+ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channel-renderer, .sbdd_b {
   /* Removes shelf recommendations */
   /* Removes Shorts shelf */
   /* Removes sidebar */
   /* Removes channel search results */
+  /* Removes search suggestions */
   display: none !important;
 }
 
