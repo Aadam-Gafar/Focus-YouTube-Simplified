@@ -1,17 +1,28 @@
 /* #region HOME */
 
-div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-content {
+div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #guide-content,
+ytd-notification-topbar-button-renderer {
   /* Removes homepage recommendations */
   /* Removes burger menu icon */
   /* Removes start banner icons */
-  /* Removes end banner icons */
   /* Removes sidebar */
+  /* Removes header notifications */
+  display: none !important;
+}
+
+ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default {
+  /* Removes 'Create button (header) */
   display: none !important;
 }
 
 #container {
   /* Centres banner content */
   justify-content: center !important;
+}
+
+#end {
+  /* Removes minimum width on end buttons (Create, Notifications, Avatar) */
+  min-width: 0px !important;
 }
 
 /* #endregion */
@@ -37,7 +48,7 @@ div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #end, #guide-cont
   display: none;
 }
 
-#secondary, #items, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
+#secondary, .ytd-watch-next-secondary-results-renderer, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
 #flexible-item-buttons, #button-shape, segmented-like-dislike-button-view-model, #subscribe-button,
 #community-post, .html5-endscreen, ytd-comment-engagement-bar, #creator-thumbnail {
   /* Removes right-hand side recommendations */
