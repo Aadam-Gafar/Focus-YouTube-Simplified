@@ -91,4 +91,14 @@ a[href*="@"] {
   outline: none !important;
 }
 
+#voice-search-button {
+  /* Removes voice search button */
+  display: none !important;
+}
+
+ytd-button-renderer.style-scope.ytd-masthead {
+  /* Removes 'Create' button */
+  display: none !important;
+}
+
 /* #endregion */
