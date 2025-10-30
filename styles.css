@@ -49,7 +49,7 @@ ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default {
 }
 
 #secondary, .ytd-watch-next-secondary-results-renderer, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
-#flexible-item-buttons, #button-shape, segmented-like-dislike-button-view-model, #subscribe-button,
+#flexible-item-buttons, #button-shape, #subscribe-button,
 #community-post, .html5-endscreen, ytd-comment-engagement-bar, #creator-thumbnail {
   /* Removes right-hand side recommendations */
   /* Removes underneath recommendations (zoomed) */
@@ -58,7 +58,6 @@ ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default {
   /* Due to removing simple-box, adjusts comments title for aesthetics */
   /* Removes download button */
   /* Removes 'More' button (three dots) */
-  /* Removes like buttons */
   /* Removes subscribe button */
   /* Removes community post option when sharing */
   /* Removes end-of-video grid recommendations */
