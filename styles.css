@@ -100,4 +100,13 @@ ytd-button-renderer.style-scope.ytd-masthead {
   display: none !important;
 }
 
+.ytp-fullscreen-grid-main-content {
+  /* Removes recommendations after a video */
+  display: none !important;
+}
+
+.ytp-ce-element {
+  display: none !important;
+}
+
 /* #endregion */
