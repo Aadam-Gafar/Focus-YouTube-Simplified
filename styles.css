@@ -72,10 +72,14 @@ ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default {
 
 ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channel-renderer, .sbdd_b {
   /* Removes shelf recommendations */
-  /* Removes Shorts shelf */
   /* Removes sidebar */
   /* Removes channel search results */
   /* Removes search suggestions */
+  display: none !important;
+}
+
+grid-shelf-view-model {
+  /* Removes Shorts shelf */
   display: none !important;
 }
 
