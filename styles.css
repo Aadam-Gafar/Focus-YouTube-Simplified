@@ -1,116 +1,42 @@
 /* #region HOME */
-
-div.style-scope.ytd-rich-grid-renderer, #guide-button, #start, #guide-content,
-ytd-notification-topbar-button-renderer {
-  /* Removes homepage recommendations */
-  /* Removes burger menu icon */
-  /* Removes start banner icons */
-  /* Removes sidebar */
-  /* Removes header notifications */
-  display: none !important;
-}
-
-ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default {
-  /* Removes 'Create button (header) */
-  display: none !important;
-}
-
-#container {
-  /* Centres banner content */
-  justify-content: center !important;
-}
-
-#end {
-  /* Removes minimum width on end buttons (Create, Notifications, Avatar) */
-  min-width: 0px !important;
-}
-
+div.style-scope.ytd-rich-grid-renderer  { display: none !important; } /* Hides recommended video grid on homepage */
+#guide-button                            { display: none !important; } /* Hides hamburger menu icon in top-left */
+#guide-content                           { display: none !important; } /* Hides left sidebar navigation panel */
+ytd-notification-topbar-button-renderer  { display: none !important; } /* Hides notification bell in header */
+ytd-topbar-menu-button-renderer          { display: none !important; } /* Hides Create (camera+) button in header */
+#container                               { justify-content: center !important; } /* Centres search bar now that sidebar icons are gone */
+#end                                     { min-width: 0px !important; } /* Allows header right-side to shrink when buttons are hidden */
 /* #endregion */
 
 /* #region WATCH */
-
-#primary {
-  /* Centres video player */
-  margin-right: 201px;
-  padding-left: 225px;
-}
-
+#primary                                          { margin-right: 201px; padding-left: 225px; } /* Offsets video player to centre it without the sidebar */
 @media screen and (max-width: 958px) {
-  #primary {
-    /* Centres video player */
-    margin-right: 0px;
-    padding-left: 0px;
-  }
+  #primary                                        { margin-right: 0px; padding-left: 0px; } /* Resets centering offset on narrow screens */
 }
-
-#secondary {
-  /* Centres video player */
-  display: none;
-}
-
-#secondary, .ytd-watch-next-secondary-results-renderer, ytd-metadata-row-container-renderer, #simple-box, ytd-comments-header-renderer, 
-#flexible-item-buttons, #button-shape, #subscribe-button,
-#community-post, .html5-endscreen, ytd-comment-engagement-bar, #creator-thumbnail {
-  /* Removes right-hand side recommendations */
-  /* Removes underneath recommendations (zoomed) */
-  /* Removes metadata boxes under description */
-  /* Removes box to write comments */
-  /* Due to removing simple-box, adjusts comments title for aesthetics */
-  /* Removes download button */
-  /* Removes 'More' button (three dots) */
-  /* Removes subscribe button */
-  /* Removes community post option when sharing */
-  /* Removes end-of-video grid recommendations */
-  /* Removes comment reply area */
-  /* Removes creator reply indicator */
-  display: none !important;
-}
-
+#secondary                                        { display: none !important; } /* Hides right-hand sidebar (Up Next, recommendations) */
+.ytd-watch-next-secondary-results-renderer        { display: none !important; } /* Hides recommendations shown below player when zoomed in */
+ytd-metadata-row-container-renderer               { display: none !important; } /* Hides info cards (category, licence) under description */
+#simple-box                                       { display: none !important; } /* Hides comment input box */
+ytd-comments-header-renderer                      { display: none !important; } /* Hides "Comments" heading (left orphaned when input box is removed) */
+#flexible-item-buttons                            { display: none !important; } /* Hides Download and Save buttons under video */
+#button-shape                                     { display: none !important; } /* Hides More (...) button under video */
+#subscribe-button                                 { display: none !important; } /* Hides Subscribe button next to channel name */
+#community-post                                   { display: none !important; } /* Hides Community Post tab in share dialog */
+.html5-endscreen                                  { display: none !important; } /* Hides video grid shown at end of playback */
+ytd-comment-engagement-bar                        { display: none !important; } /* Hides reply/like bar on individual comments */
+#creator-thumbnail                                { display: none !important; } /* Hides creator avatar shown on pinned comment replies */
 /* #endregion */
 
 /* #region SEARCH */
-
-ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-mini-guide-renderer, ytd-channel-renderer, .sbdd_b {
-  /* Removes shelf recommendations */
-  /* Removes sidebar */
-  /* Removes channel search results */
-  /* Removes search suggestions */
-  display: none !important;
-}
-
-grid-shelf-view-model {
-  /* Removes Shorts shelf */
-  display: none !important;
-}
-
-#page-manager {
-  /* Widens search page */
-  margin-left: 0px !important;
-}
-
-a[href*="@"] {
-  /* Disables links with @ (i.e. channels) */
-  pointer-events: none;
-  outline: none !important;
-}
-
-#voice-search-button {
-  /* Removes voice search button */
-  display: none !important;
-}
-
-ytd-button-renderer.style-scope.ytd-masthead {
-  /* Removes 'Create' button */
-  display: none !important;
-}
-
-.ytp-fullscreen-grid-main-content {
-  /* Removes recommendations after a video */
-  display: none !important;
-}
-
-.ytp-ce-element {
-  display: none !important;
-}
-
+ytd-shelf-renderer                                                              { display: none !important; } /* Hides grouped recommendation shelves in results */
+ytd-reel-shelf-renderer                                                         { display: none !important; } /* Hides Shorts shelf in search results */
+ytd-mini-guide-renderer                                                         { display: none !important; } /* Hides collapsed left sidebar on search page */
+ytd-channel-renderer                                                            { display: none !important; } /* Hides channel cards in search results */
+grid-shelf-view-model                                                           { display: none !important; } /* Hides Shorts grid shelf (alternate element) */
+.ytp-fullscreen-grid-main-content                                               { display: none !important; } /* Hides video grid overlay in fullscreen mode */
+.ytp-ce-element                                                                 { display: none !important; } /* Hides clickable end cards overlaid on video */
+#buttons > ytd-button-renderer > yt-button-shape > button[aria-label="Create"]  { display: none !important; } /* Hides Create button (targeted by aria-label to avoid collateral) */
+#page-manager                                                                   { margin-left: 0px !important; } /* Removes left margin on search page left by hidden sidebar */
+a[href*="@"]                                                                    { pointer-events: none; } /* Makes channel name links unclickable */
+#center > yt-searchbox                                                          { margin: 0 !important; } /* Removes gap between home icon and search bar */
 /* #endregion */
