@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mono, a distraction-free YouTube extension",
   "version": "2.0.0",
-  "description": "This is not YouTube as entertainment, it is YouTube as a tool.",
+  "description": "Reclaim your time.",
   "content_scripts": [
     {
       "css": ["styles.css"],
@@ -10,6 +10,6 @@
     }
   ],
   "icons": {
-    "128": "icon_128.png"
+    "128": "art/icon_128.png"
   }
 }
