@@ -1,6 +1,6 @@
 # Mono, a distraction-free YouTube extension
 
-![Mono](art/splash_1080.png)
+![Mono](art/splash_1280_800.png)
 
 Meet **Mono** - the tired little robot who tidied up your YouTube so you didn't have to. Don't bother thanking him. He'll probably ignore you.
 
@@ -15,7 +15,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Watch page
 
-![Watch page](art/screenshot_watch.png)
+![Watch page](art/ss1_1280_800.png)
 
 - Right-hand recommendations sidebar
 - End-of-video recommendation grid
@@ -28,7 +28,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Search page
 
-![Search page](art/screenshot_search.png)
+![Search page](art/ss2_1280_800.png)
 
 - Shelf recommendations
 - Shorts shelves
@@ -37,7 +37,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Comments
 
-![Comments](art/screenshot_comments.png)
+![Comments](art/ss3_1280_800.png)
 
 - Comment input box
 - Reply and engagement bars
@@ -49,7 +49,7 @@ Everything you actually need: the search bar, the video player, comments (read-o
 
 ### Themes
 
-![Night mode](art/screenshot_themes.png)
+![Night mode](art/ss4_1280_800.png)
 
 And yes, night mode is still here. Mono isn't unreasonable.
 
@@ -69,12 +69,12 @@ mono/
 ├── art/
 |   ├── designs.free
 │   ├── icon_128.png
-│   ├── icon_512.png
-│   ├── splash_1080.png
-│   ├── screenshot_watch.png
-│   ├── screenshot_search.png
-│   ├── screenshot_comments.png
-│   └── screenshot_themes.png
+│   ├── splash_1280_800.png
+│   ├── marquee_1400_560.png
+│   ├── ss1_1280_800.png
+│   ├── ss2_1280_800.png
+│   ├── ss3_1280_800.png
+│   └── ss4_1280_800.png
 └── README.md
 ```
 
