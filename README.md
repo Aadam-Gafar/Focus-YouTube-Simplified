@@ -57,7 +57,7 @@ And yes, night mode is still here. Mono isn't unreasonable.
 
 ### [Chrome](https://chromewebstore.google.com/detail/focus-for-youtube/nppiofogichmlkadpbpkpojpidedifeh)
 
-### [Firefox](https://addons.mozilla.org/en-US/firefox/addon/focus-youtube-simplified/)
+### [Firefox](https://addons.mozilla.org/en-US/firefox/addon/mono-extension/)
 
 ## File structure
 

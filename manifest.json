@@ -3,6 +3,11 @@
   "name": "Mono, a distraction-free YouTube extension",
   "version": "2.0.0",
   "description": "Reclaim your time.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{a6451854-795c-4f40-af7f-6238fb463108}"
+    }
+  },
   "content_scripts": [
     {
       "css": ["styles.css"],
