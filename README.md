@@ -37,7 +37,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Comments
 
-![Comments](art/ss3_1280_800.png)
+![Comments](art/ss4_1280_800.png)
 
 - Comment input box
 - Reply and engagement bars
@@ -49,7 +49,7 @@ Everything you actually need: the search bar, the video player, comments (read-o
 
 ### Themes
 
-![Night mode](art/ss4_1280_800.png)
+![Night mode](art/ss3_1280_800.png)
 
 And yes, night mode is still here. Mono isn't unreasonable.
 
