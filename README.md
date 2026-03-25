@@ -28,7 +28,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Search page
 
-![Search page](art/ss2_1280_800.png)
+![Search page](art/ss4_1280_800.png)
 
 - Shelf recommendations
 - Shorts shelves
@@ -37,7 +37,7 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 ### Comments
 
-![Comments](art/ss4_1280_800.png)
+![Comments](art/ss2_1280_800.png)
 
 - Comment input box
 - Reply and engagement bars
