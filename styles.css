@@ -3,7 +3,6 @@ div.style-scope.ytd-rich-grid-renderer  { display: none !important; } /* Hides r
 #guide-button                            { display: none !important; } /* Hides hamburger menu icon in top-left */
 #guide-content                           { display: none !important; } /* Hides left sidebar navigation panel */
 ytd-notification-topbar-button-renderer  { display: none !important; } /* Hides notification bell in header */
-ytd-topbar-menu-button-renderer          { display: none !important; } /* Hides Create (camera+) button in header */
 #container                               { justify-content: center !important; } /* Centres search bar now that sidebar icons are gone */
 #end                                     { min-width: 0px !important; } /* Allows header right-side to shrink when buttons are hidden */
 /* #endregion */
