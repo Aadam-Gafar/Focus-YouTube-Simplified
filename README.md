@@ -91,3 +91,13 @@ mono/
 - YouTube frequently updates its internal class names and element structure. If something stops working, the relevant selector likely needs updating.
 - Some elements use YouTube's custom web components (e.g. `ytd-*`) which may behave differently across page navigations due to YouTube's single-page app architecture.
 - The watch page centering (`#primary` offsets) is tuned for typical desktop widths and may need adjustment on very large or ultrawide screens.
+
+### Support
+
+Modern tech is often designed to hijack our attention with dark patterns and infinite feeds. I build things to fight that. If you find my tools helpful, your support is appreciated. If not, no pressure, just remember to touch grass every once in a while.
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/YOUR_USERNAME">
+    <img src="art/bmc-button.png" alt="Buy Me A Coffee" width="220" />
+  </a>
+</p>
