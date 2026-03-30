@@ -97,7 +97,7 @@ mono/
 Modern tech is often designed to hijack our attention with dark patterns and infinite feeds. I build things to fight that. If you find my tools helpful, your support is appreciated. If not, no pressure, just remember to touch grass every once in a while.
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/YOUR_USERNAME">
+  <a href="https://www.buymeacoffee.com/aadamgafar">
     <img src="art/bmc-button.png" alt="Buy Me A Coffee" width="220" />
   </a>
 </p>
