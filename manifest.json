@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mono, a distraction-free YouTube extension",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Reclaim your time.",
   "browser_specific_settings": {
     "gecko": {
