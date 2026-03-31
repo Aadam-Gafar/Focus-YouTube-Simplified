@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Popup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            width: 214px;
+            min-height: 122px;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #ffffff 0%, #ff6565 100%);
+            background-size: 300% 300%;
+            animation: shiftGradient 6s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.08),
+                0 4px 12px rgba(201, 112, 112, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.85),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.06);
+            backdrop-filter: blur(8px);
+            padding: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: default;
+        }
+
+        .glass:hover {
+            transform: translateY(-3px) scale(1.01);
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 6px 8px rgba(0, 0, 0, 0.1),
+                0 12px 28px rgba(201, 112, 112, 0.3),
+                0 1px 0 rgba(255, 255, 255, 0.9),
+                inset 0 2px 0 rgba(255, 255, 255, 0.95),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        @keyframes shiftGradient {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass">
+        <a href="https://buymeacoffee.com/aadamgafar" target="_blank">
+            <img src="art/bmc_popup.png" alt="Buy Me a Coffee">
+        </a>
+    </div>
+</body>
+
+</html>

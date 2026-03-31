@@ -65,8 +65,11 @@ And yes, night mode is still here. Mono isn't unreasonable.
 mono/
 
 ├── manifest.json
+├── popup.html
 ├── styles.css
 ├── art/
+|   ├── bmc-button.png
+|   ├── bmc_1400_560.png
 |   ├── designs.free
 │   ├── icon_128.png
 │   ├── splash_1280_800.png
