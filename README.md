@@ -68,13 +68,12 @@ mono/
 ├── popup.html
 ├── styles.css
 ├── art/
-|   ├── bmc-button.png
-|   ├── bmc_1400_560.png
-|   ├── designs.free
+│   ├── bmc_popup.png
+│   ├── designs.free
 │   ├── icon_128.png
-│   ├── splash_1280_800.png
 │   ├── marquee_1400_560.png
 │   ├── promo_440_280.png
+│   ├── splash_1280_800.png
 │   ├── ss1_1280_800.png
 │   ├── ss2_1280_800.png
 │   ├── ss3_1280_800.png
