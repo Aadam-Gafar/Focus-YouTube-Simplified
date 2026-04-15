@@ -83,9 +83,7 @@ mono/
 
 ## Mono
 
-Mono isn't just a random robot; his visual identity is a literal subversion of YouTube’s core UI.
-
-His face is derived directly from the YouTube Play button. By turning the iconic play triangle into a pause symbol (his oh, so tired eyes), the brand reflects the extension's primary goal: stopping the infinite loop of recommendations and giving the user a moment to breathe.
+Mono isn't just a random robot; his visual identity is a literal subversion of YouTube’s core UI. His face is derived directly from the YouTube Play button. By turning the iconic play triangle into a pause symbol (his oh, so tired eyes), the brand reflects the extension's primary goal: stopping the infinite loop of recommendations and giving the user a moment to breathe.
 
 ## Design principles
 
