@@ -24,6 +24,8 @@ ytd-comments-header-renderer                      { display: none !important; } 
 .html5-endscreen                                  { display: none !important; } /* Hides video grid shown at end of playback */
 ytd-comment-engagement-bar                        { display: none !important; } /* Hides reply/like bar on individual comments */
 #creator-thumbnail                                { display: none !important; } /* Hides creator avatar shown on pinned comment replies */
+#chat-container                                   { display: none !important; } /* Hides "Live chat replay" header in live chat sidebar */
+#teaser-carousel                                  { display: none !important; } /* Hides "Up next" carousel shown in live chat sidebar */
 /* #endregion */
 
 /* #region SEARCH */
@@ -40,6 +42,7 @@ grid-shelf-view-model                                                           
 .ytp-ce-element                                                                       { display: none !important; }       /* Hides clickable end cards overlaid on video */
 #buttons > ytd-button-renderer > yt-button-shape > button[aria-label="Create"]        { display: none !important; }       /* Hides Create button (targeted by aria-label to avoid collateral) */
 #page-manager                                                                         { margin-left: 0px !important; }    /* Removes left margin on search page left by hidden sidebar */
-a[href*="@"]                                                                          { pointer-events: none; }           /* Makes channel name links unclickable */
+a[href*="@"], a[href*="/channel/"]                                                    { pointer-events: none; }           /* Makes channel name and image links unclickable */
 #center > yt-searchbox                                                                { margin: 0 !important; }           /* Removes gap between home icon and search bar */
+#sponsor-button                                                                       { display: none !important; }       /* Hides "Join" button shown on some channels in search results */
 /* #endregion */
