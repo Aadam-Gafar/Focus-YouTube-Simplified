@@ -6,6 +6,8 @@ Meet **Mono** - the tired little robot who tidied up your YouTube so you didn't 
 
 This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No tracking, no page scripts, no extra permissions.
 
+Learn more at **[monoapp.uk](https://monoapp.uk)**.
+
 ## What it removes
 
 ### Header
@@ -64,6 +66,10 @@ And yes, night mode is still here. Mono isn't unreasonable.
 ### [Chrome](https://chromewebstore.google.com/detail/focus-for-youtube/nppiofogichmlkadpbpkpojpidedifeh)
 
 ### [Firefox](https://addons.mozilla.org/en-US/firefox/addon/mono-extension/)
+
+## Contact
+
+Questions, bugs, or feedback? Email **[contact@monoapp.uk](mailto:contact@monoapp.uk)**.
 
 ## File structure
 
