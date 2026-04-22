@@ -100,4 +100,8 @@ Lightweight CSS-only extension - no JavaScript, no tracking, no background proce
 
 Development by Aadam Gafar
 
+Website: https://monoapp.uk
+
+Contact: contact@monoapp.uk
+
 Source code: https://github.com/Aadam-Gafar/Focus-YouTube-Simplified
