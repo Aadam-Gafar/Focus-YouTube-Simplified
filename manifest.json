@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Mono, a distraction-free YouTube extension",
-  "version": "2.1.0",
-  "description": "Reclaim your time.",
+  "name": "Mono for YouTube",
+  "version": "2.2.0",
+  "description": "A distraction-free YouTube extension.",
   "browser_specific_settings": {
     "gecko": {
       "id": "{a6451854-795c-4f40-af7f-6238fb463108}"
