@@ -9,7 +9,10 @@
     }
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Open monoapp.uk"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

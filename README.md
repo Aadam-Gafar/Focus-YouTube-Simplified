@@ -4,7 +4,7 @@
 
 Meet **Mono** - the tired little robot who tidied up your YouTube so you didn't have to. Don't bother thanking him. He'll probably ignore you.
 
-This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No JavaScript, no tracking, no background processes.
+This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No tracking, no page scripts, no extra permissions.
 
 ## What it removes
 
@@ -65,10 +65,9 @@ And yes, night mode is still here. Mono isn't unreasonable.
 mono/
 
 ├── manifest.json
-├── popup.html
+├── background.js
 ├── styles.css
 ├── art/
-│   ├── bmc_popup.png
 │   ├── designs.free
 │   ├── icon_128.png
 │   ├── marquee_1400_560.png
@@ -87,9 +86,9 @@ Mono isn't just a random robot; his visual identity is a literal subversion of Y
 
 ## Design principles
 
-- **CSS only** - no JavaScript, no overhead, no permissions, no risk
+- **CSS-first** - YouTube cleanup is handled by CSS, with a tiny toolbar-link service worker
 - **No feature creep** - if it doesn't reduce distraction, it's out
-- **Minimal footprint** - one stylesheet, one manifest, one icon
+- **Minimal footprint** - one stylesheet, one manifest, one icon, and one small click handler
 - **Non-destructive** - hides elements visually, does not modify the DOM
 
 ## Known limitations
@@ -98,12 +97,3 @@ Mono isn't just a random robot; his visual identity is a literal subversion of Y
 - Some elements use YouTube's custom web components (e.g. `ytd-*`) which may behave differently across page navigations due to YouTube's single-page app architecture.
 - The watch page centering (`#primary` offsets) is tuned for typical desktop widths and may need adjustment on very large or ultrawide screens.
 
-### Support
-
-Modern tech is often designed to hijack our attention with dark patterns and infinite feeds. I build things to fight that. If you find my tools helpful, your support is appreciated. If not, no pressure, just remember to touch grass every once in a while.
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/aadamgafar">
-    <img src="art/bmc-button.png" alt="Buy Me A Coffee" width="220" />
-  </a>
-</p>
