@@ -81,10 +81,18 @@ Features:
 
 - Blocks YouTube homepage recommendations
 - Removes sidebar and navigation menus
+- Hides notification and create buttons
 - Hides YouTube Shorts shelves
+- Hides individual Shorts search results
+- Hides channel cards and channel search links
+- Hides search result shelves and filter clutter
 - Removes end cards and end-of-video autoplay recommendations
-- Removes subscribe and download buttons
+- Removes fullscreen recommendation overlays
+- Removes subscribe, join, download, save, and more buttons
 - Removes comment input (comments remain readable)
+- Removes comment engagement bars and creator reply indicators
+- Removes live chat replay clutter and sidebar carousels
+- Removes info cards under video descriptions
 - Disables channel links
 - Centres the video player
 
