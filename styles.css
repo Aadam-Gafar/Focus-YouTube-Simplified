@@ -27,6 +27,7 @@ ytd-comment-engagement-bar                        { display: none !important; } 
 /* #endregion */
 
 /* #region SEARCH */
+ytd-horizontal-card-list-renderer                                                     { display: none !important; }       /* Hides horizontal card shelves in search results */
 ytd-shelf-renderer                                                                    { display: none !important; }       /* Hides grouped recommendation shelves in results */
 ytd-reel-shelf-renderer                                                               { display: none !important; }       /* Hides Shorts shelf in search results */
 ytd-video-renderer:has(ytd-thumbnail a#thumbnail[href*="/shorts/"]),                                                      /* Hides individual Shorts results */
