@@ -101,8 +101,3 @@ Development: Aadam Gafar
 Website: https://monoapp.uk
 Contact: contact@monoapp.uk
 Source code: https://github.com/Aadam-Gafar/Mono-for-YouTube
-Website: https://monoapp.uk
-
-Contact: contact@monoapp.uk
-
-Source code: https://github.com/Aadam-Gafar/Focus-YouTube-Simplified
