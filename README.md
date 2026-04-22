@@ -4,7 +4,7 @@
 
 Meet **Mono** - the tired little robot who tidied up your YouTube so you didn't have to. Don't bother thanking him. He'll probably ignore you.
 
-This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No tracking, no page scripts, no extra permissions.
+This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No JavaScript, no tracking, no background processes.
 
 Learn more at **[monoapp.uk](https://monoapp.uk)**.
 
@@ -76,20 +76,20 @@ Questions, bugs, or feedback? Email **[contact@monoapp.uk](mailto:contact@monoap
 ```
 mono/
 
-├── manifest.json
-├── background.js
-├── styles.css
-├── art/
-│   ├── designs.free
-│   ├── icon_128.png
-│   ├── marquee_1400_560.png
-│   ├── promo_440_280.png
-│   ├── splash_1280_800.png
-│   ├── ss1_1280_800.png
-│   ├── ss2_1280_800.png
-│   ├── ss3_1280_800.png
-│   └── ss4_1280_800.png
-└── README.md
+|-- manifest.json
+|-- styles.css
+|-- art/
+|   |-- designs.free
+|   |-- icon_128.png
+|   |-- marquee_1400_560.png
+|   |-- promo_440_280.png
+|   |-- splash_1280_800.png
+|   |-- ss1_1280_800.png
+|   |-- ss2_1280_800.png
+|   |-- ss3_1280_800.png
+|   `-- ss4_1280_800.png
+|-- README.md
+`-- RELEASE.md
 ```
 
 ## Mono
@@ -98,9 +98,9 @@ Mono isn't just a random robot; his visual identity is a literal subversion of Y
 
 ## Design principles
 
-- **CSS-first** - YouTube cleanup is handled by CSS, with a tiny toolbar-link service worker
+- **CSS-only** - YouTube cleanup is handled entirely by CSS
 - **No feature creep** - if it doesn't reduce distraction, it's out
-- **Minimal footprint** - one stylesheet, one manifest, one icon, and one small click handler
+- **Minimal footprint** - one stylesheet, one manifest, and one icon
 - **Non-destructive** - hides elements visually, does not modify the DOM
 
 ## Known limitations

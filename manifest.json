@@ -8,12 +8,6 @@
       "id": "{a6451854-795c-4f40-af7f-6238fb463108}"
     }
   },
-  "action": {
-    "default_title": "Open monoapp.uk"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
       "css": ["styles.css"],
