@@ -37,6 +37,9 @@ ytd-video-renderer:has(a#thumbnail[href*="/shorts/"]),                          
 ytd-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]) { display: none !important; }  /* Hides individual Shorts results */
 ytd-mini-guide-renderer                                                               { display: none !important; }       /* Hides collapsed left sidebar on search page */
 ytd-channel-renderer                                                                  { display: none !important; }       /* Hides channel cards in search results */
+iron-selector > yt-chip-cloud-chip-renderer:nth-of-type(2)                            { display: none !important; }       /* Hides second search filter chip */
+ytd-search-filter-group-renderer:first-of-type > ytd-search-filter-renderer:nth-of-type(2),
+ytd-search-filter-group-renderer:first-of-type > ytd-search-filter-renderer:nth-of-type(3) { display: none !important; }    /* Hides second and third options in first search filter group */
 grid-shelf-view-model                                                                 { display: none !important; }       /* Hides Shorts grid shelf (alternate element) */
 .ytp-fullscreen-grid-main-content                                                     { display: none !important; }       /* Hides video grid overlay in fullscreen mode */
 .ytp-ce-element                                                                       { display: none !important; }       /* Hides clickable end cards overlaid on video */
