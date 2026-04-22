@@ -25,6 +25,8 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 - Comment input box
 - Comment reply and engagement bars
 - Info cards under the description
+- Live chat replay header
+- "Up next" carousel in live chat sidebars
 
 ### Search page
 
@@ -32,7 +34,11 @@ This is a lightweight browser extension that strips YouTube down to the essentia
 
 - Shelf recommendations
 - Shorts shelves
+- Individual Shorts results
+- Horizontal card shelves
 - Channel cards
+- Channel image and name links
+- Shorts and channel search filter chips
 - Collapsed sidebar
 
 ### Comments
