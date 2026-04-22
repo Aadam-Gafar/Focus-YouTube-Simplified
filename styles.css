@@ -27,15 +27,18 @@ ytd-comment-engagement-bar                        { display: none !important; } 
 /* #endregion */
 
 /* #region SEARCH */
-ytd-shelf-renderer                                                              { display: none !important; } /* Hides grouped recommendation shelves in results */
-ytd-reel-shelf-renderer                                                         { display: none !important; } /* Hides Shorts shelf in search results */
-ytd-mini-guide-renderer                                                         { display: none !important; } /* Hides collapsed left sidebar on search page */
-ytd-channel-renderer                                                            { display: none !important; } /* Hides channel cards in search results */
-grid-shelf-view-model                                                           { display: none !important; } /* Hides Shorts grid shelf (alternate element) */
-.ytp-fullscreen-grid-main-content                                               { display: none !important; } /* Hides video grid overlay in fullscreen mode */
-.ytp-ce-element                                                                 { display: none !important; } /* Hides clickable end cards overlaid on video */
-#buttons > ytd-button-renderer > yt-button-shape > button[aria-label="Create"]  { display: none !important; } /* Hides Create button (targeted by aria-label to avoid collateral) */
-#page-manager                                                                   { margin-left: 0px !important; } /* Removes left margin on search page left by hidden sidebar */
-a[href*="@"]                                                                    { pointer-events: none; } /* Makes channel name links unclickable */
-#center > yt-searchbox                                                          { margin: 0 !important; } /* Removes gap between home icon and search bar */
+ytd-shelf-renderer                                                                    { display: none !important; }       /* Hides grouped recommendation shelves in results */
+ytd-reel-shelf-renderer                                                               { display: none !important; }       /* Hides Shorts shelf in search results */
+ytd-video-renderer:has(ytd-thumbnail a#thumbnail[href*="/shorts/"]),                                                      /* Hides individual Shorts results */
+ytd-video-renderer:has(a#thumbnail[href*="/shorts/"]),                                                                    /* Hides individual Shorts results */
+ytd-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"]) { display: none !important; }  /* Hides individual Shorts results */
+ytd-mini-guide-renderer                                                               { display: none !important; }       /* Hides collapsed left sidebar on search page */
+ytd-channel-renderer                                                                  { display: none !important; }       /* Hides channel cards in search results */
+grid-shelf-view-model                                                                 { display: none !important; }       /* Hides Shorts grid shelf (alternate element) */
+.ytp-fullscreen-grid-main-content                                                     { display: none !important; }       /* Hides video grid overlay in fullscreen mode */
+.ytp-ce-element                                                                       { display: none !important; }       /* Hides clickable end cards overlaid on video */
+#buttons > ytd-button-renderer > yt-button-shape > button[aria-label="Create"]        { display: none !important; }       /* Hides Create button (targeted by aria-label to avoid collateral) */
+#page-manager                                                                         { margin-left: 0px !important; }    /* Removes left margin on search page left by hidden sidebar */
+a[href*="@"]                                                                          { pointer-events: none; }           /* Makes channel name links unclickable */
+#center > yt-searchbox                                                                { margin: 0 !important; }           /* Removes gap between home icon and search bar */
 /* #endregion */
