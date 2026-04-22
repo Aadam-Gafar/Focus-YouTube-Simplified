@@ -78,7 +78,6 @@ Meet Mono - the tired little robot who tidied up your YouTube so you didn't have
 This is a lightweight browser extension that strips YouTube down to the essentials by hiding recommendations, distractions, and dark patterns with pure CSS. No JavaScript, no tracking, no background processes.
 
 Features:
-
 - Blocks YouTube homepage recommendations
 - Removes sidebar and navigation menus
 - Hides notification and create buttons
@@ -98,8 +97,10 @@ Features:
 
 Lightweight CSS-only extension - no JavaScript, no tracking, no background processes. Works on all YouTube pages including watch, search, and homepage.
 
-Development by Aadam Gafar
-
+Development: Aadam Gafar
+Website: https://monoapp.uk
+Contact: contact@monoapp.uk
+Source code: https://github.com/Aadam-Gafar/Mono-for-YouTube
 Website: https://monoapp.uk
 
 Contact: contact@monoapp.uk
