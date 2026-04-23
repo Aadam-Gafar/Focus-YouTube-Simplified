@@ -63,9 +63,12 @@ And yes, night mode is still here. Mono isn't unreasonable.
 
 ## Installation
 
-### [Chrome](https://chromewebstore.google.com/detail/focus-for-youtube/nppiofogichmlkadpbpkpojpidedifeh)
-
-### [Firefox](https://addons.mozilla.org/en-US/firefox/addon/mono-extension/)
+| Product | Link |
+| --- | --- |
+| 🖥️ Mono for Desktop | [Download for Windows](https://github.com/Aadam-Gafar/Mono-Public-Dist/releases/download/v1.0.0/Mono.Video.Library_1.0.0_x64_en-US.msi) |
+| 🌐 Mono for YouTube (Chrome) | [Install from the Chrome Web Store](https://chromewebstore.google.com/detail/focus-for-youtube/nppiofogichmlkadpbpkpojpidedifeh) |
+| 🦊 Mono for YouTube (Firefox) | [Install from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/mono-extension/) |
+| 🛠️ Mono for YouTube (GitHub) | [Source code](https://github.com/Aadam-Gafar/Mono-for-YouTube) |
 
 ## Contact
 
@@ -91,10 +94,6 @@ mono/
 |-- README.md
 `-- RELEASE.md
 ```
-
-## Mono
-
-Mono isn't just a random robot; his visual identity is a literal subversion of YouTube’s core UI. His face is derived directly from the YouTube Play button. By turning the iconic play triangle into a pause symbol (his oh, so tired eyes), the brand reflects the extension's primary goal: stopping the infinite loop of recommendations and giving the user a moment to breathe.
 
 ## Design principles
 
